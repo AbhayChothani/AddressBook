@@ -12,6 +12,7 @@ using System.Web.UI.WebControls;
 /// </summary>
 public static class CommonDropDownFillMethod
 {
+    #region FillDropDownListCountry
     public static void FillDropDownListCountry(DropDownList ddlCountryID, Label lblMessage)
     {
         //fillddl
@@ -44,6 +45,9 @@ public static class CommonDropDownFillMethod
             objConn.Close();
         }
     }
+    #endregion FillDropDownListCountry
+
+    #region FillDropDownListState
     public static void FillDropDownListState(DropDownList ddlStateID,DropDownList ddlCountryID, Label lblMessage)
     {
         ddlStateID.Items.Clear();
@@ -79,8 +83,9 @@ public static class CommonDropDownFillMethod
             objConn.Close();
         }
     }
+    #endregion FillDropDownListState
 
-
+    #region FillDropDownListCity
     public static void FillDropDownListCity(DropDownList ddlStateID, DropDownList ddlCountryID,DropDownList ddlCityID, Label lblMessage)
     {
         SqlConnection objConn = new SqlConnection(ConfigurationManager.ConnectionStrings["AddressBookConnectionString"].ConnectionString);
@@ -115,4 +120,5 @@ public static class CommonDropDownFillMethod
             objConn.Close();
         }
     }
+    #endregion FillDropDownListCity
 }
