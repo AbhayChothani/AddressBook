@@ -5,12 +5,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMainContnet" runat="Server">
     <div class="row">
         <div class="col-md-12">
-            <h2>Contact Add Edit Page</h2>
+            <h2>Contact Add / Edit Page</h2>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <asp:Label runat="server" ID="lblMessage" EnableViewState="false" />
+            <asp:Label runat="server" ID="lblMessage" EnableViewState="false" ForeColor="Lime"/>
         </div>
     </div>
     

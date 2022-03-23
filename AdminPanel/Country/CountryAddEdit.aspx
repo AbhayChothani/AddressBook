@@ -10,7 +10,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <asp:Label runat="server" ID="lblMessage" EnableViewState="false"/>
+            <asp:Label runat="server" ID="lblMessage" EnableViewState="False" ForeColor="Lime"/>
         </div>
     </div>
     <div class="row">

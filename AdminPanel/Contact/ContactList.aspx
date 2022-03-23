@@ -47,9 +47,10 @@
                 </Columns>
 
             </asp:GridView>--%>
-            <asp:GridView AutoGenerateColumns="false" ID="gvContact" runat="server" CssClass="table table-bordered" OnRowCommand="gvContact_RowCommand">
+            <asp:GridView AutoGenerateColumns="false" ID="gvContact" runat="server" CssClass="table table-bordered" OnRowCommand="gvContact_RowCommand" CellPadding="4" ForeColor="#333333" GridLines="None">
+                <AlternatingRowStyle BackColor="White" ForeColor="#284775"></AlternatingRowStyle>
                 <Columns>
-                     <asp:TemplateField  HeaderText="Delete">
+                    <asp:TemplateField HeaderText="Delete">
                         <ItemTemplate>
                             <asp:Button runat="server" ID="btnDelete" OnClientClick="return confirm('Are you sure you want to delete this Contact?')" CssClass="btn btn-danger btn-sm" Text="Delete" CommandName="DeleteRecord" CommandArgument='<%# Eval("ContactID") %>' />
                         </ItemTemplate>
@@ -60,14 +61,14 @@
                             <asp:HyperLink runat="server" ID="hlEdit" CssClass="btn btn-info" Text="Edit" NavigateUrl='<%# "/AdminPanel/Contact/Edit/"+ Eval("ContactID").ToString() %>' />
                         </ItemTemplate>
                     </asp:TemplateField>
-                    
+
                     <asp:BoundField DataField="ContactName" HeaderText="ContactName" />
                     <asp:TemplateField HeaderText="Photo">
                         <ItemTemplate>
                             <asp:Image runat="server" ID="imgPhoto" ImageUrl='<%# Eval("ContactPhotoPath") %>' Height="50" />
                         </ItemTemplate>
                     </asp:TemplateField>
-                   
+
                     <asp:BoundField DataField="ContactCategoryName" HeaderText="ContactCategoryName" />
                     <asp:BoundField DataField="ContactNo" HeaderText="ContactNo " />
                     <asp:BoundField DataField="StateName" HeaderText="State" />
@@ -87,6 +88,25 @@
 
                 </Columns>
 
+                <EditRowStyle BackColor="#999999"></EditRowStyle>
+
+                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White"></FooterStyle>
+
+                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White"></HeaderStyle>
+
+                <PagerStyle HorizontalAlign="Center" BackColor="#284775" ForeColor="White"></PagerStyle>
+
+                <RowStyle BackColor="#F7F6F3" ForeColor="#333333"></RowStyle>
+
+                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333"></SelectedRowStyle>
+
+                <SortedAscendingCellStyle BackColor="#E9E7E2"></SortedAscendingCellStyle>
+
+                <SortedAscendingHeaderStyle BackColor="#506C8C"></SortedAscendingHeaderStyle>
+
+                <SortedDescendingCellStyle BackColor="#FFFDF8"></SortedDescendingCellStyle>
+
+                <SortedDescendingHeaderStyle BackColor="#6F8DAE"></SortedDescendingHeaderStyle>
             </asp:GridView>
 
 

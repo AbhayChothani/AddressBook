@@ -20,25 +20,45 @@
                 <asp:HyperLink runat="server" ID="hlAddCity" Text="Add New City" CssClass="btn btn-default mb-4" NavigateUrl="/AdminPanel/City/Add" BackColor="Black" Font-Size="Medium" ForeColor="White" />
             </div>
             <div>
-                <asp:GridView ID="gvCity" AutoGenerateColumns="false" CssClass="table table-hover"  runat="server" OnRowCommand="gvCity_RowCommand">
+                <asp:GridView ID="gvCity" AutoGenerateColumns="false" CssClass="table table-hover" runat="server" OnRowCommand="gvCity_RowCommand" CellPadding="4" ForeColor="#333333" GridLines="None">
+                    <AlternatingRowStyle BackColor="White" ForeColor="#284775"></AlternatingRowStyle>
                     <Columns>
-                    <asp:TemplateField HeaderText="Delete">
-                        <ItemTemplate>
-                            <asp:Button runat="server" ID="btnDelete" Text="Delete" OnClientClick="return confirm('Are you sure you want to delete this City?')" CssClass="btn btn-danger btn-sm" CommandName="DeleteRecord" CommandArgument='<%# Eval("CityID").ToString() %>' />
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Edit">
-                        <ItemTemplate>
-                            <asp:HyperLink runat="server" ID="btnEdit" Text="Edit" NavigateUrl='<%# "/AdminPanel/City/Edit/" +Eval("CityID").ToString().Trim() %>' CssClass=" btn btn-info"/>
-                        </ItemTemplate>
-                    </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Delete">
+                            <ItemTemplate>
+                                <asp:Button runat="server" ID="btnDelete" Text="Delete" OnClientClick="return confirm('Are you sure you want to delete this City?')" CssClass="btn btn-danger btn-sm" CommandName="DeleteRecord" CommandArgument='<%# Eval("CityID").ToString() %>' />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Edit">
+                            <ItemTemplate>
+                                <asp:HyperLink runat="server" ID="btnEdit" Text="Edit" NavigateUrl='<%# "/AdminPanel/City/Edit/" +Eval("CityID").ToString().Trim() %>' CssClass=" btn btn-info" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
                         <asp:BoundField DataField="CityName" HeaderText="CityName" />
-                    <asp:BoundField DataField="StateName" HeaderText="StateName" />
-                    <asp:BoundField DataField="CountryName" HeaderText="CountryName" />
-                    <asp:BoundField DataField="STDCode" HeaderText="STDCode" />
-                    <asp:BoundField DataField="PinCode" HeaderText="PinCode" />
-                    <asp:BoundField DataField="CreationDate" HeaderText="CreationDate" />
-                </Columns>
+                        <asp:BoundField DataField="StateName" HeaderText="StateName" />
+                        <asp:BoundField DataField="CountryName" HeaderText="CountryName" />
+                        <asp:BoundField DataField="STDCode" HeaderText="STDCode" />
+                        <asp:BoundField DataField="PinCode" HeaderText="PinCode" />
+                        <asp:BoundField DataField="CreationDate" HeaderText="CreationDate" />
+                    </Columns>
+                    <EditRowStyle BackColor="#999999"></EditRowStyle>
+
+                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White"></FooterStyle>
+
+                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White"></HeaderStyle>
+
+                    <PagerStyle HorizontalAlign="Center" BackColor="#284775" ForeColor="White"></PagerStyle>
+
+                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333"></RowStyle>
+
+                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333"></SelectedRowStyle>
+
+                    <SortedAscendingCellStyle BackColor="#E9E7E2"></SortedAscendingCellStyle>
+
+                    <SortedAscendingHeaderStyle BackColor="#506C8C"></SortedAscendingHeaderStyle>
+
+                    <SortedDescendingCellStyle BackColor="#FFFDF8"></SortedDescendingCellStyle>
+
+                    <SortedDescendingHeaderStyle BackColor="#6F8DAE"></SortedDescendingHeaderStyle>
                 </asp:GridView>
             </div>
         </div>
