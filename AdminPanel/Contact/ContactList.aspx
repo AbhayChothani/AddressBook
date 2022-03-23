@@ -51,7 +51,7 @@
                 <Columns>
                      <asp:TemplateField  HeaderText="Delete">
                         <ItemTemplate>
-                            <asp:Button runat="server" ID="btnDelete" CssClass="btn btn-danger btn-sm" Text="Delete" CommandName="DeleteRecord" CommandArgument='<%# Eval("ContactID") %>' />
+                            <asp:Button runat="server" ID="btnDelete" OnClientClick="return confirm('Are you sure you want to delete this Contact?')" CssClass="btn btn-danger btn-sm" Text="Delete" CommandName="DeleteRecord" CommandArgument='<%# Eval("ContactID") %>' />
                         </ItemTemplate>
                     </asp:TemplateField>
 

@@ -21,7 +21,7 @@
         <div class="col-md-6">
             <div class="row">
                 <div class ="col-md-4">
-                    ContactCategory Name
+                  <span style="color:red">*</span>  ContactCategory Name
                 </div>
                 <div class ="col-md-8">
                     <asp:TextBox runat="server" ID="txtContactCategoryName" CssClass="form-control"/>

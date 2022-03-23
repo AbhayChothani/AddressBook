@@ -15,7 +15,7 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            Country Name
+           <span style="color:red">*</span> Country Name
         </div>
         <div class="col-md-8">
             <asp:TextBox runat="server" ID="txtCountryName" CssClass="form-control"/>
@@ -23,7 +23,7 @@
     </div><br />
      <div class="row">
         <div class="col-md-4">
-            Country Code
+           <span style="color:red">*</span> Country Code
         </div>
         <div class="col-md-8">
             <asp:TextBox runat="server" ID="txtCountryCode" CssClass="form-control"/>

@@ -18,7 +18,7 @@
         <div class="col-md-6">
             <div class="row">
                 <div class ="col-md-4">
-                    Country
+                  <span style="color:red">*</span>  Country
                 </div>
                 <div class ="col-md-8">
                     <asp:DropDownList runat="server" ID="ddlCountryID" OnSelectedIndexChanged="ddlCountryID_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control"></asp:DropDownList>
@@ -26,7 +26,7 @@
             </div><br />
             <div class="row">
                 <div class ="col-md-4">
-                    State
+                  <span style="color:red">*</span>  State
                 </div>
                 <div class ="col-md-8">
                     <asp:DropDownList runat="server" ID="ddlStateID" CssClass="form-control"></asp:DropDownList>
@@ -34,7 +34,7 @@
             </div><br />
             <div class="row">
                 <div class ="col-md-4">
-                    City Name
+                  <span style="color:red">*</span>  City Name
                 </div>
                 <div class ="col-md-8">
                     <asp:TextBox runat="server" ID="txtCityName" CssClass="form-control"/>
@@ -42,7 +42,7 @@
             </div><br />
             <div class="row">
                 <div class ="col-md-4">
-                    STD Code
+                   <span style="color:red">*</span> STD Code
                 </div>
                 <div class ="col-md-8">
                     <asp:TextBox runat="server" ID="txtSTDCode" CssClass="form-control"/>
@@ -50,7 +50,7 @@
             </div><br />
             <div class="row">
                 <div class ="col-md-4">
-                   Pin Code
+                  <span style="color:red">*</span> Pin Code
                 </div>
                 <div class ="col-md-8">
                     <asp:TextBox runat="server" ID="txtPinCode" CssClass="form-control"/>

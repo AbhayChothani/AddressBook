@@ -20,7 +20,7 @@
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-4">
-                    Country
+                    <span style="color:red">*</span> Country
                 </div>
                 <div class="col-md-8">
                     <asp:DropDownList runat="server" ID="ddlCountryID" OnSelectedIndexChanged="ddlCountryID_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control"></asp:DropDownList>
@@ -30,7 +30,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    State
+                   <span style="color:red">*</span> State
                 </div>
                 <div class="col-md-8">
                     <asp:DropDownList runat="server" ID="ddlStateID" OnSelectedIndexChanged="ddlStateID_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control"></asp:DropDownList>
@@ -40,7 +40,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    City
+                   <span style="color:red">*</span> City
                 </div>
                 <div class="col-md-8">
                     <asp:DropDownList runat="server" ID="ddlCityID" CssClass="form-control"></asp:DropDownList>
@@ -60,7 +60,7 @@
             <br />--%>
             <div class="row">
                 <div class="col-md-4">
-                    Contact Name
+                   <span style="color:red">*</span> Contact Name
                 </div>
                 <div class="col-md-8">
                     <asp:TextBox runat="server" ID="txtContactName" CssClass="form-control" />
@@ -71,7 +71,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    Upload Photo
+                  <span style="color:red">*</span>  Upload Photo
                 </div>
                 <div class="col-md-8">
                     <asp:FileUpload runat="server" ID="fuContactPhotoPath" />
@@ -80,7 +80,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    ContactNo.
+                   <span style="color:red">*</span> ContactNo.
                 </div>
                 <div class="col-md-8">
                     <asp:TextBox runat="server" ID="txtContactNo" CssClass="form-control" TextMode="Phone" />
@@ -91,7 +91,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    WhatsAppNo
+                   <span style="color:red">*</span> WhatsAppNo
                 </div>
                 <div class="col-md-8">
                     <asp:TextBox runat="server" ID="txtWhatsAppNo" CssClass="form-control" TextMode="Phone" />
@@ -102,7 +102,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    BirthDate
+                  <span style="color:red">*</span>  BirthDate
                 </div>
                 <div class="col-md-8">
                     <asp:TextBox runat="server" ID="txtBirthDate" CssClass="form-control" TextMode="Date" />
@@ -113,7 +113,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    Email
+                  <span style="color:red">*</span>  Email
                 </div>
                 <div class="col-md-8">
                     <asp:TextBox runat="server" ID="txtEmail" CssClass="form-control" TextMode="Email" />
@@ -124,7 +124,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    Age
+                  <span style="color:red">*</span>  Age
                 </div>
                 <div class="col-md-8">
                     <asp:TextBox runat="server" ID="txtAge" CssClass="form-control" TextMode="Number" />
@@ -135,7 +135,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    Address
+                   <span style="color:red">*</span> Address
                 </div>
                 <div class="col-md-8">
                     <asp:TextBox runat="server" ID="txtAddress" CssClass="form-control" />
@@ -146,7 +146,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    BloodGroup
+                  <span style="color:red">*</span>  BloodGroup
                 </div>
                 <div class="col-md-8">
                     <asp:TextBox runat="server" ID="txtBloodGroup" CssClass="form-control" />
@@ -157,7 +157,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    FaceBookID
+                   <span style="color:red">*</span> FaceBookID
                 </div>
                 <div class="col-md-8">
                     <asp:TextBox runat="server" ID="txtFacebookID" CssClass="form-control" />
@@ -168,7 +168,7 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    LinkedlnID
+                  <span style="color:red">*</span>  LinkedlnID
                 </div>
                 <div class="col-md-8">
                     <asp:TextBox runat="server" ID="txtLinkedlnID" CssClass="form-control" />
