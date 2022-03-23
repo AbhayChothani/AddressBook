@@ -60,7 +60,7 @@
                             <asp:HyperLink runat="server" ID="hlEdit" CssClass="btn btn-info" Text="Edit" NavigateUrl='<%# "/AdminPanel/Contact/Edit/"+ Eval("ContactID").ToString() %>' />
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:BoundField DataField="ContactID" HeaderText="ContactID" />
+                    
                     <asp:BoundField DataField="ContactName" HeaderText="ContactName" />
                     <asp:TemplateField HeaderText="Photo">
                         <ItemTemplate>

@@ -20,7 +20,7 @@
                 <asp:HyperLink runat="server" ID="hlAddCity" Text="Add New City" CssClass="btn btn-default mb-4" NavigateUrl="/AdminPanel/City/Add" BackColor="Black" Font-Size="Medium" ForeColor="White" />
             </div>
             <div>
-                <asp:GridView ID="gvCity" CssClass="table table-hover"  runat="server" OnRowCommand="gvCity_RowCommand">
+                <asp:GridView ID="gvCity" AutoGenerateColumns="false" CssClass="table table-hover"  runat="server" OnRowCommand="gvCity_RowCommand">
                     <Columns>
                     <asp:TemplateField HeaderText="Delete">
                         <ItemTemplate>
@@ -32,6 +32,12 @@
                             <asp:HyperLink runat="server" ID="btnEdit" Text="Edit" NavigateUrl='<%# "/AdminPanel/City/Edit/" +Eval("CityID").ToString().Trim() %>' CssClass=" btn btn-info"/>
                         </ItemTemplate>
                     </asp:TemplateField>
+                        <asp:BoundField DataField="CityName" HeaderText="CityName" />
+                    <asp:BoundField DataField="StateName" HeaderText="StateName" />
+                    <asp:BoundField DataField="CountryName" HeaderText="CountryName" />
+                    <asp:BoundField DataField="STDCode" HeaderText="STDCode" />
+                    <asp:BoundField DataField="PinCode" HeaderText="PinCode" />
+                    <asp:BoundField DataField="CreationDate" HeaderText="CreationDate" />
                 </Columns>
                 </asp:GridView>
             </div>

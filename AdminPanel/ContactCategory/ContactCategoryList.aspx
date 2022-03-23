@@ -18,7 +18,7 @@
             <div class="text-right">
                 <asp:HyperLink runat="server" ID="hlAddContactCategory" Text="Add New ContactCategory" CssClass="btn btn-default mb-4" NavigateUrl="/AdminPanel/ContactCategory/Add" BackColor="Black" Font-Size="Medium" ForeColor="White" />
             </div>
-            <asp:GridView ID="gvContactCategory" CssClass="table table-hover" runat="server" OnRowCommand="gvContactCategory_RowCommand">
+            <asp:GridView ID="gvContactCategory"  AutoGenerateColumns="false" CssClass="table table-hover" runat="server" OnRowCommand="gvContactCategory_RowCommand">
                 <Columns>
                     <asp:TemplateField HeaderText="Delete">
                         <ItemTemplate>
@@ -30,6 +30,10 @@
                             <asp:HyperLink runat="server" ID="btnEdit" Text="Edit" NavigateUrl='<%# "/AdminPanel/ContactCategory/Edit/" +Eval("ContactCategoryID").ToString().Trim() %>' CssClass=" btn btn-info"/>
                         </ItemTemplate>
                     </asp:TemplateField>
+               
+                    <asp:BoundField DataField="ContactCategoryName" HeaderText="ContactCategoryName" />
+                    <asp:BoundField DataField="CreationDate" HeaderText="CreationDate" />
+
                 </Columns>
             </asp:GridView>
         </div>

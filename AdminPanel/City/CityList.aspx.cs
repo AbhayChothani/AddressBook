@@ -44,7 +44,7 @@ public partial class AdminPanel_City_CityList : System.Web.UI.Page
         }
         catch (Exception ex)
         {
-            lblMessage.Text = ex.Message;
+           lblMessage.Text = ex.Message;
         }
         finally
         {
